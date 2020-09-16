@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BTVN</title>
+</head>
+<body>
+<input type="button" value="Sau bao nam ban duoc 300tr? " onclick="howlong()" width="300" height="300">
+</body>
+</html>
+<script>
+    let Year= prompt("Nhap so nam ban muon gui");
+    let Money=prompt("Nhap so tien ban muon gui");
+    var Money2=Money;
+    for (i=1; i<=Year;i++){
+        Money = Money*1.08;
+    }
+    document.write("So tien ban nhan duoc la " + Money).innerHTML(Money);
+
+    function howlong(){
+        let Result = Money2;
+        if (Result>300000000) {
+            document.write("Nhieu tien di cho khac choi");
+        }
+        else {
+        for(j=1;Result<300000000;j++) {
+        Result= Result*1.08;
+        }
+            document.write("Sau " + j + " nam ban se duoc 300tr").innerHTML;
+        }
+    }
+</script>
