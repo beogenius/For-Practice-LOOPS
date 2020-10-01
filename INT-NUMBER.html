@@ -33,10 +33,10 @@
     var result = "";
     while ( count < n) {
         if (checkPrimeNumbers(number)) {
+            result += `<span>${number} ;</span>`
             count ++;
-            result = result + `<span>${number} ;</span>`
         }
-        number+=1;
+        number++;
     }
     document.write(result);
 </script>
